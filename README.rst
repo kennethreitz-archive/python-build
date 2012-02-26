@@ -3,6 +3,10 @@ Overview
 
 Pythonbrew is anti-virtualenv. This isn't.
 
+Differences:
+
+- No `switch`. That's crazy.
+- Bottles (pre-compiled Pythons)
 
 ----------------------------------
 
