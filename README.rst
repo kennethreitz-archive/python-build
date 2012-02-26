@@ -1,6 +1,9 @@
 Overview
 ========
 
+Pythonbrew is anti-virtualenv. This isn't.
+
+
 pythonbrew is a program to automate the building and installation of Python in the users $HOME.
 
 pythonbrew is inspired by `perlbrew <http://github.com/gugod/App-perlbrew>`_ and `rvm <https://github.com/wayneeseguin/rvm>`_.
@@ -12,7 +15,7 @@ The recommended way to download and install pythonbrew is to run these statement
 
   curl -kL http://xrl.us/pythonbrewinstall | bash
 
-After that, pythonbrew installs itself to ~/.pythonbrew. 
+After that, pythonbrew installs itself to ~/.pythonbrew.
 
 Please add the following line to the end of your ~/.bashrc::
 
@@ -40,7 +43,7 @@ Usage
 =====
 
 pythonbrew command [options]
-    
+
 Install some pythons::
 
   pythonbrew install 2.7.2
@@ -53,7 +56,7 @@ Install some pythons::
   pythonbrew install /path/to/Python-2.7.2.tgz
   pythonbrew install /path/to/Python-2.7.2
   pythonbrew install 2.7.2 3.2
-  
+
 Permanently use the specified python::
 
   pythonbrew switch 2.7.2
@@ -95,7 +98,7 @@ Upgrades pythonbrew to the latest version::
 Disable pythonbrew::
 
   pythonbrew off
-  
+
 Create/Remove a symbolic link to python (in a directory on your $PATH)::
 
   pythonbrew symlink # Create a symbolic link, like "py2.7.2", for each installed version
@@ -105,12 +108,12 @@ Create/Remove a symbolic link to python (in a directory on your $PATH)::
   pythonbrew symlink -v foo # Create a symbolic link to the specified virtual environment python in bin directory
 
 Runs the buildout with specified or current using python::
-  
+
   pythonbrew buildout
   pythonbrew buildout -p 2.6.6
 
 Create isolated python environments (uses virtualenv)::
-  
+
   pythonbrew venv init
   pythonbrew venv create proj
   pythonbrew venv list
@@ -139,10 +142,10 @@ py <python file>
 
 list
   List the installed all pythons.
-  
+
 list -k <version>
   List the available install pythons.
-  
+
 uninstall <version>
   Uninstall the given version of python.
 
@@ -154,19 +157,19 @@ update
 
 off
   Disable pythonbrew.
-  
+
 symlink
   Create/Remove a symbolic link to python (in a directory on your $PATH)
-  
+
 buildout
   Runs the buildout with specified or current using python.
-  
+
 venv
   Create isolated python environments (uses virtualenv)
-  
+
 version
   Show version.
-  
+
 See more details below
   `pythonbrew help <command>`
 
